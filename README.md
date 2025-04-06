@@ -1,4 +1,4 @@
-# Roblox Mud System
+# Mud System
 
 A server-authoritative system for applying movement penalties when players traverse mud-covered terrain.
 
@@ -36,8 +36,15 @@ local SETTINGS = {
     }
 }
 ```
+
 ## Network Communication
 The system uses a RemoteEvent structure:
 ```
 MudModifierEvent:FireClient(player, speedModifier)
+```
+
+## Debugging
+This system has visual sphere debugging for detecting terrain material:
+```
+local DEBUG_VISUAL = true
 ```
