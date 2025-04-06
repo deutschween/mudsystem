@@ -9,6 +9,7 @@ A server-authoritative system for applying movement penalties when players trave
 - **Network Optimized**: Uses RemoteEvents for efficient client communication
 - **Visual Debugging**: Optional debug spheres for development testing
 - **Server-Side Authority**: All calculations happen on the server for anti-cheat protection
+- **Accumulation**: Mud is increased via levels, with each level making walkspeed slower.
 
 ## Installation
 1. Make a new script in "ServerScriptService"
