@@ -11,9 +11,9 @@ A server-authoritative system for applying movement penalties when players trave
 - **Server-Side Authority**: All calculations happen on the server for anti-cheat protection
 
 ## Installation
-
-1. Create a new Script in `ServerScriptService` named `MudSystem`
-2. Add the following code to `MudSystem`:
+1. Make a new script in "ServerScriptService"
+2. Copy MudSystem.lua
+3. Paste the code to `Script`.
 
 ## Configuration
 Modify the SETTINGS table at the top of the script:
@@ -35,4 +35,9 @@ local SETTINGS = {
         MinSpeed = 1       -- Minimum allowed movement speed
     }
 }
+```
+## Network Communication
+The system uses a RemoteEvent structure:
+```
+MudModifierEvent:FireClient(player, speedModifier)
 ```
